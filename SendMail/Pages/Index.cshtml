@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <form action="" method="post" enctype="multipart/form-data">
+        <label class="col-md-3 col-form-label" for="FirstName">Фамилия</label>
+        <input class="form-control" asp-for="FirstName" id="FirstName" type="text" name="FirstName" placeholder="Введите фамилию">
+
+        <label class="col-md-3 col-form-label" for="LastName">Имя</label>
+        <input class="form-control" asp-for="LastName" id="LastName" type="text" name="LastName" placeholder="Введите имя">
+
+        <label class="col-md-3 col-form-label" for="MiddleName">Отчество</label>
+        <input class="form-control" asp-for="MiddleName" id="MiddleName" type="text" name="MiddleName" placeholder="Введите отчество">
+
+        <label class="col-md-3 col-form-label" for="NumberGroup">Группа</label>
+        <input class="form-control" asp-for="NumberGroup" id="NumberGroup" type="text" name="NumberGroup" placeholder="Введите № группы">
+
+        <label class="col-md-3 col-form-label" for="Email">Почта</label>
+        <input class="form-control" asp-for="Email" id="Email" type="text" name="Email" placeholder="Введите свою почту">
+
+        <input type="file" asp-for="Upload" name="Upload" />
+
+        <button class="btn btn-primary" type="submit"> Отправить </button>
+    </form>
+</div>
